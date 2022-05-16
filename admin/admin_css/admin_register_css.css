@@ -1,0 +1,78 @@
+
+.section_two{
+    display: grid;
+    place-items: center;
+}
+.signin-page{
+     display: grid;
+    place-items: center;
+
+} 
+
+
+.signin-title{
+  color: #F68B1E;
+}
+
+
+.main-signin-form{
+    display: grid;
+    grid-template-rows: repeat(6,1fr); 
+    margin: 10px;
+    place-items: center;
+
+}
+
+
+.main-signin-form > input{
+    display: grid;
+    padding: 30px 15px 15px 15px;
+    width:300px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.main-signin-form input:focus::placeholder{
+    color: #F68B1E;
+}
+
+.main-signin-form input:focus{
+    border-bottom: 1px solid #F68B1E;
+}
+
+
+.main-signup-action{
+ margin-top: 20px; 
+}
+
+.main-signin-button{
+    width: 300px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #F68B1E;
+    border: none;
+    filter:drop-shadow(1px 1px 5px grey);
+    outline: none;
+}
+
+#product_description{
+    background-color: whitesmoke;
+    outline: none;
+    margin-top: 12px;
+}
+
+
+/*-------------message d'erreur----------------*/
+
+.errormsg{
+   color: red;
+  
+}
+.succesmsg{
+    color: green;
+   
+ }
+
+

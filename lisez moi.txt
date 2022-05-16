@@ -1,0 +1,10 @@
+
+
+    compte admin
+
+  admin@gmail.com
+  mdp:admin 
+
+
+
+pour tester la partie admin

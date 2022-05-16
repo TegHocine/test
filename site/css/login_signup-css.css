@@ -1,0 +1,111 @@
+
+ .main_main{
+     display: grid;
+     height: fit-content;
+     place-items: center;
+ }
+.signin-page{
+      margin-bottom: 40px;
+    margin-top:120px;
+	background-color: whitesmoke;
+	border-radius: 3px;
+    text-align: center;
+    display: grid;
+    width: 40%;
+
+} 
+
+
+.signin-title{
+  color: #F68B1E;
+}
+
+
+.main-signin-form{
+    display: block;
+    padding: 16px;
+    margin: 16px;
+
+}
+
+
+.main-signin-form input{
+    display: block;
+    padding: 30px 15px 15px 15px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.main-signin-form input:focus::placeholder{
+    color: #F68B1E;
+}
+
+.main-signin-form input:focus{
+    border-bottom: 1px solid #F68B1E;
+}
+
+
+.main-signup-action{
+ margin-top: 20px; 
+}
+
+.main-signin-button{
+    width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #F68B1E;
+    border: none;
+    filter:drop-shadow(1px 1px 5px grey);
+    outline: none;
+}
+
+.redirect{
+    text-decoration: none;
+    padding: 12px;
+    
+}
+.redirect a{
+    text-decoration: none;
+    color: #F68B1E ;
+    
+}
+
+
+/*-------------message d'erreur----------------*/
+
+.errormsg{
+   color: red;
+  
+}
+
+/*-------------------------responsive------------------------*/
+@media only screen and (max-width: 907px){
+  
+    .signin-page{
+        margin-top: 150px;  
+        margin-bottom: 30px;
+    } 
+    
+}
+
+@media only screen and (max-width: 800px){
+  
+    .signin-page{
+        width: 300px;   
+    } 
+    .main-signin-form{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    
+    .main-signin-form input{
+        
+        padding: 20px 10px 10px 10px;
+       
+    }
+}

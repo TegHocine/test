@@ -1,0 +1,229 @@
+/*css pour le tableau des client et produit pour voir le client et les produit existant*/
+/*et la partie creation de produit */
+
+.section_two { 
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-rows: minmax(100px,auto)1fr;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+.user_button{
+    display: grid;
+    align-items:end;   
+}
+
+.user_button > a{
+    display: grid;
+    font-size: 18px;
+    margin-left:45px ;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:#F68B1E ;
+    filter:drop-shadow(1px 1px 5px grey);
+    border-radius: 45px;
+    width: fit-content;
+    
+}
+/*---------------------------table des clients--------------------------*/
+.table_container{
+    display: grid;
+    grid-template-rows: minmax(50px,auto)1fr;
+    height: fit-content;
+    width: 100%;
+}
+
+.table_container > h1{
+    display: grid;
+    align-items: end;
+    margin-left: 50px;
+}
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:90%;
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-top: 20px;
+   
+  }
+  .action_but{
+    text-align: center;
+  }
+  
+  #customers td, #customers th {
+    width: fit-content;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){
+      background-color: whitesmoke;
+    }
+
+  #customers th {
+    text-align: left;
+    background-color: whitesmoke;
+    color: #0f1111;
+  }
+  .nomprod{max-width:100px; overflow-Y: auto;}
+  .img_prod{max-width:100px;max-height:100px ;}
+  .discrip{max-width:200px; overflow-Y: auto;}
+  .td_com{ padding-bottom: 20px; max-width: fit-content;}
+  .nom_prod{overflow-Y: auto;}
+  .button_delete{
+    vertical-align: middle;
+    margin:0px 5px ;
+  }
+
+.button_delete > img{
+  vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color:whitesmoke ;
+    padding: 8px 5px ;
+    background-color: #cb2027; 
+    height: 31px;
+    outline:none;
+}
+.button_edit > img{
+  vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color:whitesmoke ;
+    padding: 8px 5px ;
+    background-color:#5CB85C ;
+    height: 31px;
+    outline:none;}
+
+.text{
+  font-size: 20px;
+}
+
+
+/*--------------------creation de produit-----------------*/
+
+.signin-page{
+  margin-top: 60px;
+   display: grid;
+  place-items: center;
+
+} 
+
+
+.signin-title{
+color: #F68B1E;
+}
+
+
+.main-signin-form{
+  display: grid;
+  grid-template-rows: repeat(2,1fr); 
+  margin: 10px;
+}
+
+
+.main-signin-form > input{
+  display: grid;
+  padding: 25px 15px 15px 15px;
+  width:300px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
+  outline: none;
+}
+
+.main-signin-form input:focus::placeholder{
+  color: #F68B1E;
+}
+
+.main-signin-form input:focus{
+  border-bottom: 1px solid #F68B1E;
+}
+
+
+.main-signup-action{
+margin-top: 20px; 
+}
+
+.main-signin-button{
+  width: 100%;
+  padding: 10px;
+  color: whitesmoke;
+  background-color: #F68B1E;
+  border: none;
+  filter:drop-shadow(1px 1px 5px grey);
+  outline: none;
+}
+.categorie_prod{
+  width:300px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
+  outline: none;
+}
+#catg-select{
+  background-color: whitesmoke;
+  height: 30px;
+  width:120px;
+  margin-top: 12px;
+  outline: none;
+  text-indent: 5px;
+}
+#label{
+  color: gray;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+#product_description{
+  background-color: whitesmoke;
+  outline: none;
+  margin-top: 12px;
+  text-indent: 15px;
+
+}
+.user_button{
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: repeat(4,270px); 
+align-items: end;
+}
+
+.user_button > a{
+display: grid;
+align-items:end; 
+font-size: 18px;
+margin-left:45px ;
+margin-bottom: 10px;
+padding: 10px;
+text-decoration: none;
+color: whitesmoke;
+background-color:#F68B1E ;
+filter:drop-shadow(1px 1px 5px grey);
+border-radius: 45px;
+width: fit-content;
+
+}
+
+
+/*---------------succes and error msg-----------------*/
+.errormsg{
+  color: red;
+}.succesmsg{
+   color: green; 
+}
+.errormsg2{
+  color: red;
+   margin-left: 50px;
+}.succesmsg2{
+   color: green; 
+   margin-left: 50px;   
+}

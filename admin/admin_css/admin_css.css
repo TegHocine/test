@@ -1,0 +1,201 @@
+/*----------css pour la bare de navigation et les categories----*/
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    display: grid;
+    background-color:whitesmoke;
+  }
+
+  .nav-bar{
+    background:whitesmoke;
+    width: 100%;
+    filter: drop-shadow(0px 0px 1px gray ); 
+    height: 70px;
+    padding: 17px 0px;
+    align-items: center;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);   
+}
+.main-nav-brand {
+    display: grid;
+    vertical-align: middle;
+    }
+    
+      
+    .main-nav-brand > a{
+
+        padding-left: 20px;
+        text-decoration: none;
+        color: #0f1111;
+        font-size: 25px;
+        vertical-align: baseline;
+      
+    }
+
+/*--------------------------button connecter-------------------------*/
+#user-logo{
+    display: grid;
+    height: 22px;
+    padding-right: 2px;
+    
+ }
+ 
+.signup{
+    display: grid;
+    vertical-align: middle;
+    place-items: end   ;
+}.signup a {
+    display: grid;
+    grid-template-columns: minmax(24px,auto)1fr;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #0f1111;
+    background-color: whitesmoke;
+    filter:drop-shadow(1px 1px 5px grey);
+    border-radius: 45px;
+}.signup :hover{
+    color:#F68B1E;
+}
+ /*----------------------button deconnecter-----------------*/
+ .logout_cont{
+     display: grid;
+     place-items: center;
+ }
+    .logout_button{
+        display: grid;
+        text-decoration: none;
+        background-color: whitesmoke;
+        border: none;
+        color: #0f1111;
+        padding:10px;
+        font-size: 17px;
+        outline:none;
+        
+    }
+.button_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main_admin_content{
+    display: grid;
+    grid-template-columns: minmax(220px,auto)1fr;
+    height: 89vh;
+    overflow: hidden; 
+    
+}
+/*-------------side menu--------------*/
+.section_one {  
+    display: grid;
+    justify-items: start;
+    filter: drop-shadow(0px 0px 1px gray ); 
+    width:100%;
+    background-color: whitesmoke;
+ }
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    margin-top: 25px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #0f1111;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 0.1px solid grey;   
+  }
+
+  .dropdown-btn{
+    display: grid;
+    align-items: flex-end;
+    place-items: end;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .prod_title{
+    margin-right:50px ;
+  }
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #F68B1E;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color:whitesmoke;
+    padding-left: 8px;
+  }
+
+
+/*--------------categorie produit-----------------*/
+
+.section_three{
+    display:grid ;
+    width:900px;
+    height: 100%;
+    grid-template-columns: repeat(2 , minmax( 300px,350px));
+    grid-auto-rows: fit-content;
+    grid-gap: 20px;
+    margin-top: 40px;
+    margin-left: 200px;
+    
+}
+
+.card {
+    
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .card > img{
+    
+    max-height: 170px;
+  }
+  .card a {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #F68B1E;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+   
+    
+
+    
+    
